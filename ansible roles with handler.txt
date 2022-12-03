@@ -1,0 +1,336 @@
+ 1  su - developer
+    2  developer
+    3  sudo su
+    4  yum install httpd -y
+    5  clear
+    6  exit
+    7  yum install httpd -y
+    8  clear
+    9  yum install tree
+   10  sudo yum install tree
+   11  ssh 172.31.3.119
+   12  exit
+   13  clear
+   14  exit
+   15  ecit
+   16  exit
+   17  ssh 172.31.3.119
+   18  exit
+   19  ssh 172.31.3.152
+   20  ssh 172.31.3.119
+   21  exit
+   22  ssh developer@172.31.3.119
+   23  ssh-keygen
+   24  cd .ssh
+   25  ssh-copy-id developer@172.31.3.119
+   26  ssh developer@172.31.3.119
+   27  ssh-copy-id developer@172.31.13.39
+   28  ssh developer@172.31.13.39
+   29  ssh-copy-id developer@172.31.3.152
+   30  ssh developer@172.31.3.152
+   31  ansible Dev --list -host
+   32  ansible Dev -a "ls"
+   33  ansible all Dev --list-host
+   34  ansible  Dev --list-host
+   35  ansible  Dev[0] --list-host
+   36  ansible  Dev[1] --list-host
+   37  ansible  Dev[-1] --list-host
+   38  ansible Dev -a "ls"
+   39  ansible Dev -s "touch production"
+   40  ansible Dev -a "touch production"
+   41  ansible Dev -a "sudo yum instal l
+   42  anisble Dev -a "sudo yum install httpd -y"
+   43  anisble Dev -ba "yum install httpd -y"
+   44  anisble Dev -b -a "yum  httpd -y"
+   45  anisble Dev -a -b "yum install httpd -y"
+   46  anisble Dev -a  "sudom remove httpd -y"
+   47  anisble Dev -a  "sudo yum remove httpd -y"
+   48  ansible Dev -a "sudo yum remove httpd-y"
+   49  ansible Dev -a "sudo yum remove httpd -y"
+   50  ansible Dev -ba "yum install httpd -y"
+   51  ansible Dev -ba "yum remove httpd -y"
+   52  ansible Dev -ba "mkdir WD"
+   53  ansible Dev -ba "yum remove httpd -y"
+   54  ansible Dev -ba "rm-rf WD"
+   55  ansible Dev -ba "rm WD"
+   56  ansible Dev -a "rm WD"
+   57  ansible Dev -a "rm-rf WD"
+   58  cat /etc/ansible/hosts
+   59  ansible --version
+   60  sudo apt-get install python3
+   61  sudo apt-get install python
+   62  sudo su
+   63  ansible Dev -b -m yum -a "pkg=httpd state=present"
+   64  ansible Dev -b -m yum -a "pkg=httpd state=absent"
+   65  ansible Dev -b -m yum -a "pkg=httpd state=peresent"
+   66  ansible Dev -b -m yum -a "pkg=httpd state=present"
+   67  ansible Dev -b -m service -a "pkg=httpd state=restart"
+   68  ansible Dev -b -m service -a "pkg=httpd state=started"
+   69  ansible Dev -b -m service -a "pkg=httpd state=start"
+   70  ansible -V
+   71  ansible --version
+   72  exit
+   73  clear
+   74  ansible Dev -b -m user -a "name=abhishek"
+   75  ansible Dev -b -m service -a "pkg=httpd state=started"
+   76  ls
+   77  touch data
+   78  ls
+   79  vi data
+   80  ansible Dev -b -m copy -a "src=data dest=/tmp"
+   81  ansible Dev -b -m copy -a "src=data dest=/opt"
+   82  ls
+   83  exit
+   84  ls
+   85  exit
+   86  yum install python -y
+   87  sudo yum install python -y
+   88  visudo
+   89  vi sudo
+   90  su - root
+   91  sudo su
+   92  sodo su
+   93  exit
+   94  sudo su
+   95  vi target.yml
+   96  ansible-playbook target.yml
+   97  vi target.yml
+   98  vi target.yml
+   99  ansible-playbook task.yml
+  100  vi task.yml
+  101  ansible-playbook task.yml
+  102  vi task.yml
+  103  vi tree.yml
+  104  ansible-playbook tree.yml
+  105  vi tree.yml
+  106  ansible-playbook tree.yml
+  107  vi tree.yml
+  108  ansible-playbook tree.yml
+  109  vi tree.yml
+  110  vi task.yml
+  111  vi vars.yml
+  112  ansible-playbook vars.yml
+  113  vi vars.yml
+  114  ansible-playbook vars.yml
+  115  vi vars.yml
+  116  ansible-playbook vars.yml
+  117  vi vars.yml
+  118  ls
+  119  vi task.yml
+  120  ansible-plabook task.yml
+  121  ansible-playbook task.yml
+  122  vi task.yml
+  123  ansible-playbook task.yml
+  124  vi task.yml
+  125  ansible-playbook task.yml
+  126  vi task.yml
+  127  ansible-playbook task.yml
+  128  vi task.yml
+  129  ansible-playbook task.yml --check
+  130  vi task.yml
+  131  ansible-playbook task.yml --check
+  132  vi task.yml
+  133  ansible-playbook task.yml --check
+  134  vi task.yml
+  135  ansible-playbook task.yml
+  136  vi task.yml
+  137  ansible-playbook task.yml
+  138  vi task.yml
+  139  vi loops.yml
+  140  ansible-playbook loops.yml
+  141  vi loops.yml
+  142  ansible-playbook loops.yml
+  143  vi loops.yml
+  144  ansible-playbook loops.yml
+  145  vi loops.yml
+  146  ansible-playbook loops.yml
+  147  vi loops.yml
+  148  ansible-playbook loops.yml
+  149  vi loops.yml
+  150  ansible-playbook loops.yml
+  151  ls
+  152  clear
+  153  sudo su
+  154  exit
+  155  vi condition.ym
+  156  vi condition.yml
+  157  ls
+  158  vi task.yml
+  159  ansible-playbook task.yml
+  160  vi task.yml
+  161  ansible-playbook task.yml
+  162  ansible-playbook condition.yml
+  163  vi condition.yml
+  164  ansible-vault condition.yml
+  165  ansible_vault condition.yml
+  166  ansible-vault encrypt condition.yml
+  167  vi condition.yml
+  168  ansible-vault decrypt condition.yml
+  169  vi condition.yml
+  170  ansible-vault create vault.yml
+  171  vi vault.yml
+  172  ansible-playbook vault.yml
+  173  ansible-vault decrypt vault.yml
+  174  ansible-playbook vault.yml
+  175  ansible-playbook encrypt vault.yml
+  176  ansible-vault  encrypt vault.yml
+  177  ansible-vault  rekdy vault.yml
+  178  ansible-vault  rekey vault.yml
+  179  ansible-vault edit vault.yml
+  180  ansible-vault view vault.yml
+  181  ansible-vault decrypt vault.yml
+  182  ansible-vault encrypt_string vault.yml
+  183  ansible-vault decrypt vault.yml
+  184  ansible-vault decrypt vault.yml ASD
+  185  ansible-vault rekey vault.yml
+  186  vi vault.yml
+  187  vi abhi.yml
+  188  anible-playbook abhi.yml
+  189  ansible-playbook abhi.yml
+  190  vi abhi.yml
+  191  ansible-playbook abhi.yml
+  192  vi abhi.yml
+  193  ls
+  194  vi tree.yml
+  195  ansible-playbook tree.yml
+  196  git --version
+  197  git add .
+  198  git init
+  199  sudo git init
+  200  sudo git add .
+  201  git clone
+  202  git clone git@github.com:abhi03shri/ansible.git
+  203  git remote add origin git@github.com:abhi03shri/ansible.git
+  204  git config --global --add safe.directory /home/developer
+  205  git remote add origin git@github.com:abhi03shri/ansible.git
+  206  exit
+  207  sudo su
+  208  ls
+  209  cd..
+  210  cd ..
+  211  ls
+  212  exit
+  213  vi abhi.yml
+  214  vi etc/ansible/hosts
+  215  sudo su
+  216  exit
+  217  ls
+  218  visudo
+  219  vi sudo
+  220  sudo yum update -y
+  221  wget https //dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  222  sudo su
+  223  exit
+  224  ls
+  225  cd ansible
+  226  ls
+  227  vi abhi.yml
+  228  ansible-playbook abhi.yml
+  229  vi abhi.yml
+  230  ansible-playbook abhi.yml
+  231  vi abhi.yml
+  232  ansible-playbook abhi.yml
+  233  vi abhi.yml
+  234  ansible-playbook abhi.yml
+  235  vi abhi.yml
+  236  ansible-playbook abhi.yml
+  237  tree
+  238  clear
+  239  mkdir -p playbook/roles/webserver/tasks
+  240  tree
+  241  mkdir roles/webserver/handlers
+  242  tree
+  243  mkdir roles/webserver/vars
+  244  tree
+  245  touch master.yml
+  246  tree
+  247  vi roles/webserver/tasks/main.yml
+  248  vi master.yml
+  249  ansible-playbook master.yml
+  250  vi roles/webserver/tasks/main.yml
+  251  ansible-playbook master.yml
+  252  history
+  253  vi trre1.yml
+  254  ansible-playbook trre1.yml
+  255  vi trre1.yml
+  256  ansible-playbook trre1.yml
+  257  ls
+  258  cd support
+  259  ls
+  260  vi master.yml
+  261  cd..
+  262  cd ..
+  263  cd ntp
+  264  ls
+  265  tree
+  266  cd ..
+  267  cd abhi
+  268  ls
+  269  vi master.yml
+  270  cd roles
+  271  cd abhi
+  272  tree
+  273  cd tasks
+  274  cd ..
+  275  tree
+  276  vi roles/tree/tasks/main.yml
+  277  ansible-playbook master.yml
+  278  vi master.yml
+  279  ansible-playbook master.yml
+  280  vi master.yml
+  281  tree
+  282  vi master.yml
+  283  ansible-playbook master.yml
+  284  vi master.yml
+  285  vi roles/tree/tasks/main.yml
+  286  vi master.yml
+  287  ansible-playbook master.yml
+  288  vi roles/tree/tasks/main.yml
+  289  ansible-playbook master.yml
+  290  vi roles/tree/tasks/main.yml
+  291  cd ..
+  292  ls
+  293  cd support
+  294  tree
+  295  vi master.yml
+  296  vi roles/webserver/tasks/main.yml
+  297  ansible-playbook master.yml
+  298  vi roles/webserver/tasks/main.yml
+  299  ansible-playbook master.yml
+  300  vi roles/webserver/tasks/main.yml
+  301  ansible-playbook master.yml
+  302  vi roles/webserver/tasks/main.yml
+  303  cd ..
+  304  mkdir -p it/roles/webserver/tasks
+  305  ls
+  306  cd it
+  307  tree
+  308  mkdir roles/webserver/handlers
+  309  mkdir roles/webserver/vars
+  310  tree
+  311  touch master.yml
+  312  vi  master.yml
+  313  cd ..
+  314  cd ntp
+  315  vi master.yml
+  316  tree
+  317  cd ..
+  318  cd tree
+  319  ls
+  320  cd abhi
+  321  vi master.yml
+  322  cd ..
+  323*
+  324  tree
+  325  vi master.yml
+  326  vi roles/webserver/task/main.yml
+  327  tree
+  328  vi roles/webserver/tasks/main.yml
+  329  tree
+  330  vi roles/webserver/handlers/main.yml
+  331  ansible-playbook master.yml
+  332  tree
+  333  vi master.yml
+  334  ansible-playbook master.yml
+  335  history
+[developer@ip-172-31-2-138 it]$

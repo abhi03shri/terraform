@@ -1,0 +1,23 @@
+258  mkdir abhi
+  259  tree
+  260  ls
+  261  cd abhi
+  262  ls
+  263  cd..
+  264  cd ..
+  265  mkdir -p abhi/roles/tree/tasks
+  266  cd abhi
+  267  ls
+  268  mkdir rles/tree/handlers
+  269  mkdir roles/tree/handlers
+  270  tree
+  271  mkdir roles/tree/vars
+  272  tree
+  273  touch master.yml
+  274  tree
+  275  vi roles.tree/task/main.yml
+  276  vi master.yml
+  277  cat master.yml
+  278  vi roles/tree/tasks/main.yml
+  279  history
+[developer@ip-172-31-2-138 abhi]$
